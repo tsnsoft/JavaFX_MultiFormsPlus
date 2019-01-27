@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="573.0" prefWidth="849.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="multiframesprogramm.FXMLFrame1Controller">
+    <children>
+        <Label layoutX="98.0" layoutY="196.0" minHeight="16" minWidth="69" prefHeight="90.0" prefWidth="761.0" text="Добро пожаловать!" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Times New Roman" size="64.0" />
+         </font></Label>
+      <Button fx:id="exitframe1button" layoutX="24.0" layoutY="520.0" mnemonicParsing="false" onAction="#exitframe1button_Action" prefHeight="38.0" prefWidth="150.0" text="Выход">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="frame1nextbutton" layoutX="671.0" layoutY="520.0" mnemonicParsing="false" onAction="#frame1nextbutton_Action" prefHeight="38.0" prefWidth="149.0" text="Старт">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="99.0" layoutY="287.0" prefHeight="30.0" prefWidth="690.0" text="Вас приветствует система быстрого анкетирования.">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="102.0" layoutY="315.0" prefHeight="22.0" prefWidth="708.0" text="Нажмите &quot;Старт&quot; чтобы начать опрос.">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="99.0" layoutY="337.0" prefHeight="22.0" prefWidth="486.0" text="Нажмите &quot;Выход&quot; чтобы закрыть программу.">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

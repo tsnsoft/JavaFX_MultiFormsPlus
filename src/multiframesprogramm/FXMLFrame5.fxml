@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="573.0" prefWidth="849.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="multiframesprogramm.FXMLFrame5Controller">
+   <children>
+      <Button fx:id="frame5backbutton" layoutX="24.0" layoutY="520.0" mnemonicParsing="false" onAction="#frame5backbutton_action" prefHeight="38.0" prefWidth="150.0" text="Назад">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="frame5nextbutton" layoutX="671.0" layoutY="520.0" mnemonicParsing="false" onAction="#frame5nextbutton_action" prefHeight="38.0" prefWidth="150.0" text="Далее">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="jListLabel" layoutX="194.0" layoutY="520.0" prefHeight="39.0" prefWidth="463.0" text="Выбрано: " wrapText="true">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="14.0" prefHeight="39.0" prefWidth="574.0" text="Ваш любимый жанр кино?">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="jList" layoutX="24.0" layoutY="53.0" onMouseClicked="#jList_action" prefHeight="451.0" prefWidth="160.0" />
+      <ImageView fitHeight="436.0" fitWidth="555.0" layoutX="266.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/frame5/cinema.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="573.0" prefWidth="849.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="multiframesprogramm.FXMLFrame6Controller">
+   <children>
+      <Label layoutX="24.0" layoutY="14.0" prefHeight="39.0" prefWidth="574.0" text="Результаты:">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="frame6backbutton" layoutX="24.0" layoutY="520.0" mnemonicParsing="false" onAction="#frame6backbutton_action" prefHeight="38.0" prefWidth="150.0" text="Назад">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="frame6exitbutton" layoutX="671.0" layoutY="520.0" mnemonicParsing="false" onAction="#frame6exitbutton_action" prefHeight="38.0" prefWidth="150.0" text="Выход">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table" layoutX="24.0" layoutY="53.0" prefHeight="170.0" prefWidth="801.0" />
+      <Label layoutX="156.0" layoutY="230.0" minHeight="16" minWidth="69" prefHeight="158.0" prefWidth="538.0" text="Спасибо за тестирование!" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Times New Roman" size="64.0" />
+         </font>
+      </Label>
+      <Label layoutX="167.0" layoutY="388.0" prefHeight="22.0" prefWidth="602.0" text="Нажмите &quot;Назад&quot; чтобы вернуться к предыдущему вопросу.">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="165.0" layoutY="410.0" prefHeight="22.0" prefWidth="574.0" text="Нажмите &quot;Выход&quot; чтобы закрыть программу.">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
