@@ -1,7 +1,6 @@
 package multiframesprogramm;
 
-import com.sun.javafx.scene.control.skin.TableHeaderRow;
-import com.sun.javafx.scene.control.skin.TableViewSkinBase;
+
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -48,10 +47,10 @@ public class Utils {
         // Убираем заголовок у таблицы если требуется
         if (titles == null) {
             tableView.skinProperty().addListener((a, b, newSkin) -> {
-                TableHeaderRow headerRow = ((TableViewSkinBase) newSkin).getTableHeaderRow();
-                headerRow.setVisible(false);
-                headerRow.setPrefHeight(0);
-                headerRow.setMaxHeight(0);
+               // TableHeaderRow headerRow = ((TableViewSkinBase) newSkin).getTableHeaderRow();
+//                headerRow.setVisible(false);
+//                headerRow.setPrefHeight(0);
+//                headerRow.setMaxHeight(0);
             });
         }
 
@@ -59,13 +58,13 @@ public class Utils {
         tableView.widthProperty().addListener(new ChangeListener<Number>() {
             @Override
             public void changed(ObservableValue<? extends Number> source, Number oldWidth, Number newWidth) {
-                TableHeaderRow header = (TableHeaderRow) tableView.lookup("TableHeaderRow");
-                header.reorderingProperty().addListener(new ChangeListener<Boolean>() {
-                    @Override
-                    public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
-                        header.setReordering(false);
-                    }
-                });
+                //TableHeaderRow header = (TableHeaderRow) tableView.lookup("TableHeaderRow");
+//                header.reorderingProperty().addListener(new ChangeListener<Boolean>() {
+//                    @Override
+//                    public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+//                        header.setReordering(false);
+//                    }
+             //   });
             }
         });
 
