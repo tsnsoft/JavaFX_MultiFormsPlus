@@ -8,6 +8,7 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 
@@ -35,6 +36,10 @@ public class FXMLFrame2Controller implements Initializable {
     private ComboBox<String> combobox;
     @FXML
     private Label comboBoxLabel;
+    @FXML
+    private Button frame2backbutton;
+    @FXML
+    private Button frame2nextbutton;
 
     // Инициализация окна и компонент
     @Override

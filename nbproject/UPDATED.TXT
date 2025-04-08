@@ -1,6 +1,6 @@
-==================================================
-Project JavaFX_MultiFormsPlus build script updated
-==================================================
+======================================================
+Project JavaFXApplication_ClickMe build script updated
+======================================================
 
 Project build script file jfx-impl.xml in nbproject sub-directory has not been recognized
 as compliant with this version of NetBeans JavaFX support module. To ensure correct
